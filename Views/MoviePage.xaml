@@ -4,6 +4,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DateNight.Views.MoviePage">
     <ContentPage.Content>
-        
+        <StackLayout Padding="20,20">
+            <Image Source="movie_main"  Margin="0,20,0,20"/>
+            <Border Stroke="gray" StrokeThickness="1">
+                <Entry x:Name="txtMovie" Placeholder="Enter total cost of Movie" Keyboard="Numeric"/>
+            </Border>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -11,5 +11,11 @@ public partial class DinnerPage : ContentPage
     public DinnerPage()
     {
         InitializeComponent();
+        Title = "Dinner Input";
+    }
+    protected override void OnDisappearing()
+    {
+        base.OnDisappearing();
+        App.dateCalc.DinnerCost = txtDinner.Text;
     }
 }
